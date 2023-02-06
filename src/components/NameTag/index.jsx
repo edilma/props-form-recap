@@ -6,7 +6,7 @@ export default function NameTag(props){
             <p>First Name: {firstName}</p>
             <p>Last Name: {lastName}</p>
             <p>Email: {email}</p>
-            <p>favColor: {favColor}</p>
+            <p>Fav Color: {favColor}</p>
             <p>Date: {date}</p>
         </div>
         </>
