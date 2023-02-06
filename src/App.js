@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Greeting from './components/Greeting';
+import NameTag from './components/NameTag';
+
+const person2 = {
+  firstName: "Miguel",
+  lastName: "Smith",
+  email: "miguel@gmail.com",
+  favColor: "pink",
+  date: "2023/02/08"
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <Greeting />
+    <NameTag
+    firstName ="Idan"
+    lastName = "Fisher"
+    email = "idan@gmail.com"
+    favColor = "blue"
+    date = "2023/02/06"
+    />
+    <h3>We have another name </h3>
+    <NameTag
+    firstName ={person2.firstName}
+    lastName = {person2.lastName}
+    email = {person2.email}
+    favColor = {person2.favColor}
+    date = {person2.date}
+     />
+    
     </div>
   );
 }
